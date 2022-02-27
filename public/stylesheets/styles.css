@@ -26,6 +26,7 @@ html, body {
     justify-content: center;
     align-items: center;
     color: white;
+    background-color: blue;
     border: 5px solid red;
     font-family: Futura;
     font-size: 20px;
