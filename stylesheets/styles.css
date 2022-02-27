@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+    font-family: basic-sans;
+    color: black;
+    font-size: 16px;
+}
+
+html, body {    
+	margin: 0;
+    background-color: black;
+    height: 50px;
+    width: 500px;
+}
+
+.main {
+}
