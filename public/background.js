@@ -1,6 +1,14 @@
-let color = '#3aa757';
+/*document.getElementById("myButton").addEventListener("click", replaceWordOn);*/
 
-chrome.runtime.onInstalled.addListener(() => {
-  chrome.storage.sync.set({ color });
-  console.log('Default background color set to %cgreen', `color: ${color}`);
+function replaceWordOn() {
+	document.body.innerHTML = 
+	document.body.innerHTML.replace(/economy/gi, "rich people\'s yacht money")
+	.replace(/economic/gi, "rich people\'s yacht money");
+};
+
+chrome.browserAction.onClicked.addListener(function() {
+	chrome.tabs.executeScript(null, {
+		file: 'popup.js'
+	});
 });
+

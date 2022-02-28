@@ -1,19 +1,23 @@
 {
   "name": "Yachtify!",
-  "description": "Build an Extension!",
+  "description": "Reveals the truth about the economy",
   "version": "1.0",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "content_scripts": [
     {
-      "matches": ["https://*.wikipedia.org/wiki/Economy*"],
+      "matches": ["<all_urls>"],
       "js": ["javascripts/script.js"]
     }
   ],
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"]
   },
-  "permissions": ["activeTab"],
-  "action": {
-    "default_popup": "index.html"
-  }
+  "browser_action": {
+    "default_icon": "images/yacht.png",
+    "default_title": "Reveals the truth!"
+  },
+  "permissions": [
+   "activeTab",
+   "tabs"
+  ]
 }
