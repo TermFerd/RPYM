@@ -3,14 +3,12 @@
     font-family: basic-sans;
     color: black;
     font-size: 16px;
-    border-radius: 25px;
 }
 
 html, body {    
 	margin: 0;
     height: 60px;
     width: 200px;
-    border-radius: 25px;
 }
 
 .main {
@@ -33,7 +31,6 @@ html, body {
     font-family: Futura;
     font-size: 20px;
     font-weight: 800;
-    border-radius: 25px;
     cursor: pointer;
 }
 
@@ -41,5 +38,4 @@ html, body {
     background-color: red;
     color: black;
     border: 5px solid yellow;
-    border-radius: 25px;
 }
