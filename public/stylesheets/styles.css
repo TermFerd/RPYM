@@ -3,12 +3,14 @@
     font-family: basic-sans;
     color: black;
     font-size: 16px;
+    border-radius: 25px;
 }
 
 html, body {    
 	margin: 0;
     height: 60px;
     width: 200px;
+    border-radius: 25px;
 }
 
 .main {
