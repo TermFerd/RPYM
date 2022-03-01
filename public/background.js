@@ -6,9 +6,10 @@ function replaceWordOn() {
 	.replace(/economic/gi, "rich people\'s yacht money");
 };
 
-chrome.browserAction.onClicked.addListener(function() {
-	chrome.tabs.executeScript(null, {
-		file: 'popup.js'
+chrome.action.onClicked.addListener((tab) => {
+	chrome.scripting.executeScript({
+		target: {tabId: tab.id},
+		files: ['popup.js']
 	});
 });
 
