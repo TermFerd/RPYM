@@ -1,5 +1,5 @@
 
-/*content*/
+/*content script*/
 
 function replaceWordOn() {
 	document.body.innerHTML = 
@@ -21,3 +21,4 @@ function gotMessage(message, sender, sendResponse) {
 }
 
 
+console.log('debug');
