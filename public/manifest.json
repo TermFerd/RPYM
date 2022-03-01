@@ -1,6 +1,6 @@
 {
   "name": "Yachtify!",
-  "description": "Reveals the truth about the economy",
+  "description": "Reveals the truth about the economy - doesn't work on Youtube :(",
   "version": "1.0",
   "manifest_version": 2,
   "content_scripts": [
